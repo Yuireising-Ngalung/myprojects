@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name="theme-color" content="#800080">
+    <title>Yuireising Resume</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./logo.png" type="image/x-icon">
+
+</head>
+<body>
+
+    <!-- =============Back to Top============ -->
+    <a href="#">
+        <img class="back_to_top" src="./icons/up.svg" alt="Back_to_Top">
+    </a>
+
+    <!-- ===============Header/Navigation=============== -->
+    <header>
+        <div class="container header-container">
+             <div class="logo">
+                <h1>Resume</h1>
+            </div>
+            <nav>
+                <!-- mobile menu -->
+                 <div class="mobile">
+                    <img onclick="showMenu()" src="./icons/menu.svg" alt="Hambergur_menu">
+                    <ul id="mobile-menu">
+                        <li>
+                            <img onclick="closeMenu()" src="./icons/close.svg" alt="Close_menu" class="close">
+                        </li>
+                        <li><a href="#personalinformation">Home</a></li>
+                        <li><a href="#objectives">Objectives</a></li>
+                        <li><a href="#education">Education</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                    </ul>
+                 </div>
+
+                 <!-- desktop menu -->
+                  <ul class="desktop">
+                    <li><a href="#personalinformation">Home</a></li>
+                        <li><a href="#objectives">Objectives</a></li>
+                        <li><a href="#education">Education</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                  </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+
+        <!-- Resume Heading -->
+        <!-- <section class="color-dark-section section-no-padding header-section">
+            <div class="container title-container">
+                <h1>Resume</h1>
+            </div>
+        </section> -->
+        
+        <!-- Personal Information -->
+        <section id="personalinformation">
+            <div class="container info-container">
+                <div class="info-picture">
+                    <img src="./profile.avif" alt="profile picture">
+                </div>
+                <div class="info">
+                    <h2>Personal Information</h2>
+                    <p><b>Name: </b>Yuireising Ngalung</p>
+                    <p><b>Address: </b>Ukhrul, Manipur</p>
+                    <p><b>Phone Number: </b><a href="tel:7430957095">+91 7430957095</a></p>
+                    <p><b>Email ID: </b> <a href="mailto:yuireisingngalung@gmail.com">yuireisingngalung@gmail.com</a></p>
+                </div>  
+            </div>
+        </section>
+        
+        <!-- Objectives -->
+        <section id="objectives" class="color-dark-section">
+            <div class="container obj">
+                <dl>
+                    <dt><h2>Objectives</h2></dt>
+                    <dd>Highly motivated front-end developer with a keen interest in web technologies and a strong desire to learn and contribute to innovation solutions. Seeking an entry-level position where I can apply my skills and grow within a dynamic team</dd>
+                </dl>
+            </div>
+        </section>
+        
+        <!-- Education -->
+        <section id="education">
+            <div class="container education">
+                <h2>Education</h2>
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Qualification</th>
+                                <th>School/University</th>
+                                <th>Year of passing</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Graduation</td>
+                                <td>Spicer Adventist University, pune, Maharashtra</td>
+                                <td>2018 - 2021</td>
+                            </tr>
+                            <tr>
+                                <td>12<sup>th</sup></td>
+                                <td>Raymond Memorial Higher Sec. School, falakata, West Bengal</td>
+                                <td>2016 - 2018</td>
+                            </tr>
+                            <tr>
+                                <td>10<sup>th</sup></td>
+                                <td>Maringmi Memorial School, ukhrul, Manipur</td>
+                                <td>2016</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+            </div>
+        </section>
+        
+        <!-- Technical Skills -->
+        <section id="skills" class="color-dark-section">
+            <div class="container tech_skills">
+                <h2>Technical Skills</h2>
+                <ul>
+                    <div class="list-items">
+                        <li>HTML</li><progress value="50" max="100"></progress>
+                    </div>
+                    <div class="list-items">
+                        <li>CSS</li><progress value="30" max="100"></progress>
+                    </div>
+                    <div class="list-items">
+                        <li>JavaScript</li><progress value="10" max="100"></progress>
+                    </div>
+                    <div class="list-items">
+                        <li>React</li><progress value="5" max="100"></progress>
+                    </div>
+                    <div class="list-items">
+                        <li>Bootstrap</li><progress value="15" max="100"></progress>
+                    </div>
+                    <div class="list-items">
+                        <li>Java</li><progress value="20" max="100"></progress>
+                    </div>
+                    <div class="list-items">
+                        <li>Spring boot</li><progress value="1" max="100"></progress>
+                    </div> 
+                </ul>
+            </div>
+        </section>
+
+        <!-- Certificate -->
+         
+        
+        <!-- Self Delclaration -->
+        <section class="section-no-padding">
+            <div class="container">
+                <input type="checkbox" checked> I hereby declare that all the information provided in this resume is true and accurate to the best of my knowledge.
+            </div>
+        </section>  
+
+        <!-- footer -->
+        <footer>
+            <p>&copy; 2025 All Rights Reserved. Designed & Developed by <a href="#">Yuireising</a></p>
+        </footer> 
+    </main>
+    
+    
+
+</body>
+
+<script>
+
+
+    /* ==============Menu Item display===============*/
+    const displaymenu=document.getElementById("mobile-menu");
+
+    
+    function showMenu(){
+        displaymenu.style.display="block";
+    }
+
+    function closeMenu(){
+        displaymenu.style.display="none";
+    }
+</script>
+</html>

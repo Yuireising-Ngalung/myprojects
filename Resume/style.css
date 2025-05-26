@@ -1,0 +1,280 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    scroll-behavior:smooth;
+}
+
+:root{
+    --color-dark-blue:#0E2148;
+    --color-medium-blue:#483AA0;
+    --color-light-blue:#7965C1;
+    --color-white: #E3D095;
+}
+
+section{
+    padding: 3em 0;
+}
+
+.section-no-padding{
+    padding: 1em 0;
+}
+
+.container{
+    width: 90%;
+    max-width: 900px;
+    margin: auto;
+}
+
+.color-dark-section{
+    background-color: var(--color-dark-blue);
+    color: white;
+
+    h2{
+        color:var(--color-white);
+    }
+}
+
+/* .header-section{
+    position: sticky;
+    top: 0;
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+} */
+
+/* h1{
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--color-white);
+    border: 2px solid var(--color-dark-blue);
+    letter-spacing: 5px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+} */
+
+
+h2{
+    color: var(--color-dark-blue);
+    margin-bottom: 0.5em;
+}
+
+/* ==============Back to Top =============== */
+
+.back_to_top{
+    background-color:var(--color-white);
+    width:50px;
+    padding: 5px;
+    z-index: 1000;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    position:fixed;
+    bottom:10px;
+    right: 10px;
+    display: none;
+}
+
+/* Header/Navigation */
+header{
+    background-color: var(--color-dark-blue);
+    color: var(--color-white);
+    padding: 5px 0;
+    position: sticky;
+    top: 0;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.5);
+}
+
+.header-container{
+    display: flex;
+    height: 10vh;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Mobile menu */
+
+nav {
+    position: relative;
+}
+
+.desktop{
+    display: none;
+}
+
+nav .mobile img{
+    width: 40px;
+    padding: 5px;
+    background-color: white;
+    cursor: pointer;
+}
+
+nav .mobile ul{
+    background-color:white;
+    position: absolute;
+    right: 0;
+    top:9.5vh;
+    padding:30px 0;
+    height:fit-content;
+    width: 250px;
+    z-index: 1000;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.3);
+    display: none;
+}
+
+
+nav .mobile ul li{
+    clear: right;
+    margin: 15px;
+    padding: 1em;
+    transition: 0.5s;
+}
+
+nav .mobile ul li:first-child{
+    padding: 0;
+    margin-right: 15px;
+    float: right;
+    margin-top: -20px;
+}
+
+nav .mobile ul li a{
+    text-decoration: none;
+    color:var(--color-dark-blue);
+    display: block;
+    text-transform: uppercase;
+}
+
+nav .mobile ul li:hover{
+    background-color: var(--color-light-blue);
+    a{
+        color: white;
+    }
+}
+
+/* =========Desktop or Large Screen=========== */
+@media (width>629px){
+    .mobile{
+        display: none;
+    }
+
+    .desktop{
+        display: flex;
+        column-gap: 1em;
+        align-items: center;
+        justify-content: space-evenly;
+        list-style-type: none;
+    }
+
+    .desktop li{
+        height: 50px;
+        padding: 0 15px;
+    }
+
+    .desktop li a{
+        color: white;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        height: 100%;
+    }
+
+    .desktop li:hover{
+        background-color: var(--color-light-blue);
+    }
+
+}
+
+
+
+/* personal information */
+
+@media (width>499px){
+    .info-container{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content:space-between;
+        align-items: center;
+    }
+}
+.info>p{
+    margin-bottom: 10px;
+}
+
+.info>p>b{
+    color: var(--color-medium-blue);
+    font-weight: 900;
+}
+
+.info>p>a{
+    text-decoration: none;
+    font-style: italic;
+    color: purple;
+}
+
+.info-picture{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1em;
+}
+.info-picture>img{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+
+/* table section */
+
+.table-container{
+    overflow-x: auto;
+}
+
+table{
+    width: 100%;
+}
+
+table,th,td{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th,td{
+    padding: 5px;
+}
+
+thead{
+    background-color: var(--color-white);
+}
+
+/* Technical Skills */
+
+ul{
+    list-style: none;
+}
+
+ul li{
+    font-weight: bold;
+}
+.list-items{
+    display: flex;
+    justify-content:space-between;
+    gap: 2em;
+    padding: 1em;
+}
+
+/* footer */
+
+footer{
+    background-color: var(--color-dark-blue);
+    color: var(--color-white);
+    text-align: center;
+    padding: 1em;
+}
+
+footer a{
+    color: white;
+    text-decoration: none;
+    font-style: italic;
+}
+
+

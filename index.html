@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Layout</title>
+    <link rel="stylesheet" href="./style.css">
+    <script defer src="./myscript.js"></script>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div id="menu_hamburger" class="menu_hamburger">
+            <img src="./assets/icons/menu.svg" alt="menu" class="menu_hamburger_icon">
+        </div>
+        <div class="project_title">
+            <h1>My Projects</h1>
+        </div>
+        <div class="social_media">
+            <ul>
+                <li><a href="#"><img src="./assets/icons/facebook.svg" alt="facebook_icon" class="social_media_icon"></a></li>
+                <li><a href="#"><img src="./assets/icons/instagram.svg" alt="instagram_icon" class="social_media_icon"></a></li>
+                <li><a href="#"><img src="./assets/icons/gh_icon.svg" alt="github_icon" class="social_media_icon"></a></li>
+            </ul>
+        </div>
+    </header>
+    
+    <main>
+        <!-- Left Side Menu -->
+        <aside id="left_sidebar">
+            <div class="url_list">
+                <img src="./assets/icons/close.svg" alt="close_icon" id="close_left_sidebar" class="menu_hamburger_icon">
+                <ul>
+                    <li><a href="./Resume/index.html" target="iframe">Resume</a></li>
+                    <li><a href="./login/login.html" target="iframe">Login Form</a></li>
+                    <li><a href="./login/registration.html" target="iframe">Registration form</a></li>
+                    
+                </ul>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <section class="main">
+            <iframe src="./Resume/index.html" name="iframe"></iframe>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 All Rights Reserved. Yuireising Ngalung</p>
+    </footer>
+</body>
+</html>
