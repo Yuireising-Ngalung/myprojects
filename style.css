@@ -54,13 +54,16 @@ header{
     align-items: center;
 }
 
+.menu_hamburger{
+    display: none;
+}
+
 .menu_hamburger_icon{
     width: 32px;
     background-color: white;
     border-radius: 5px;
     padding: 5px;
     transition:all 0.2s;
-    display: none;
 }
 
 .social_media ul{
@@ -138,8 +141,8 @@ footer p{
     h1{
         font-size: 1.5rem;
     }
-    .menu_hamburger_icon{
-        display: block;
+    .menu_hamburger{
+        display:block;
     }
     aside{
         display: none;
@@ -161,6 +164,7 @@ footer p{
 
     .main{
         width: 100%;
+        padding: 0;
     }
 }
 
