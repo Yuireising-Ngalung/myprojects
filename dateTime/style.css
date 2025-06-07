@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+section{
+    background-color: #f0f0f0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.date_time_container{
+    width: min(100%, 300px);
+    background-color:#EEF0F4;
+    padding: 1.5em 1em;
+    border-radius:1em;
+    box-shadow: inset 10px 10px 15px #d4d6d9,
+    inset -10px -10px 15px #fff;
+}
+
+.date, .time{
+    text-align:center;
+}
+
+.time{
+    font-size:2.5rem;
+    margin-top:.3em;
+    font-weight: bold;
+}
