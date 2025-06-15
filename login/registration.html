@@ -17,23 +17,23 @@
                 <form action="">
                     <div class="row">
                         <label for="name">Name</label>
-                        <input type="text" name="name" id="name" placeholder="username">
+                        <input type="text" name="name" id="name" placeholder="username" minlength="3" required>
                     </div>
                     <div class="row">
                         <label for="email">Email</label>
-                        <input type="email" name="email" id="email" placeholder="email id">
+                        <input type="email" name="email" id="email" placeholder="email id" required>
                     </div>
                     <div class="row">
                         <label for="phone">Phone</label>
-                        <input type="number" name="phone" id="phone" placeholder="phone number">
+                        <input type="tel" name="phone" id="phone" placeholder="phone number" maxlength="10" required>
                     </div>
                     <div class="row">
                         <label for="password">Password</label>
-                        <input type="password" name="password" id="password" placeholder="password">
+                        <input type="password" name="password" id="password" placeholder="password" required>
                     </div>
                     <div class="row">
                         <label for="confirm_password">Confirm Password</label>
-                        <input type="password" name="confirm_password" id="confirm_password" placeholder="confirm password">
+                        <input type="password" name="confirm_password" id="confirm_password" placeholder="confirm password" required>
                     </div>
                     <div class="row">
                         <button type="submit">Submit</button>
